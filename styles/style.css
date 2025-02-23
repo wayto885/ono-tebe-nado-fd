@@ -1,18 +1,40 @@
 /* место для вашего кода */
 .header {
-}
-
-.main {
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .cover {
+  margin: 0;
+  margin-bottom: 180px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 165px;
+  padding-bottom: 50px;
+  background: url("../images/cover.jpg");
 }
 
 .lots {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 120px;
+  padding: 0;
 }
 
 .about {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 180px;
+  padding-left: 47px;
+  padding-top: 35px;
 }
 
 .footer {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.background-white {
+  background: white;
 }
