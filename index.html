@@ -11,31 +11,47 @@
   </head>
   <body>
     <header class="header background-white">
-      <nav>
-        <ul>
-          <li>
-            <a> главная </a>
+      <nav class="header__menu">
+        <ul class="header__links-list">
+          <li class="header__links-list-item header__links-list-item_no-bullit">
+            <a class="header__link header__link_active" href="#0"> главная </a>
           </li>
-          <li><a> посмотреть лоты </a></li>
-          <li>
-            <a> об аукционе </a>
+          <li class="header__links-list-item">
+            <a class="header__link" href="#0"> посмотреть лоты </a>
+          </li>
+          <li class="header__links-list-item">
+            <a class="header__link" href="#0"> об аукционе </a>
           </li>
         </ul>
       </nav>
-      <a> <img src="./images/logo-black.svg" /> </a>
-      <address></address>
+      <a class="header__logo" href="#0">
+        <img class="header__logo-image" src="./images/logo-black.svg" />
+      </a>
+      <address class="address header__address">
+        <a href="tel:+9 999 555 5555">+9 999 555 5555</a> <br />
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
+        наб. Принсенграхт 263- 265, Амстердам
+      </address>
     </header>
     <main>
       <section class="cover">
-        <h1>
-          <span>ОНО</span>
-          <span>ТЕБЕ</span>
-          <span>НАДО</span>
+        <h1 class="cover__title">
+          <span class="aligned-text">ОНО</span>
+          <span class="aligned-text aligned-text_center">ТЕБЕ</span>
+          <span class="aligned-text aligned-text_right">НАДО</span>
         </h1>
         <div class="description">
-          <p>Аукцион вещей, вкоторые никто не верил</p>
-          <button>Сделать ставку</button>
+          <p class="cover__description-text">
+            Аукцион
+            <span class="cover__description-text-spacing">
+              вещей, в которые
+            </span>
+            никто
+            <span class="cover__description-text-spacing">не верил</span>
+          </p>
+          <button class="bet-button">Сделать ставку</button>
         </div>
+        <div class="overlay"></div>
       </section>
       <section class="lots background-white">
         <h2>Лоты</h2>

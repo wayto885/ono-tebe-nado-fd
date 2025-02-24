@@ -1,11 +1,61 @@
-/* место для вашего кода */
 .header {
   margin: 0;
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 92px;
+  padding-bottom: 96px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
 }
 
+.header__logo {
+  display: block;
+  width: 148px;
+  height: 105px;
+}
+
+.header__logo-image {
+  height: 100%;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 28px;
+}
+
+.header__links-list-item {
+  list-style: circle;
+  padding-left: 5px;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+  padding-left: 0;
+}
+
+.header__link {
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+}
+.address {
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px;
+  color: #000;
+}
+.header__address {
+  width: 240px;
+  height: 98px;
+  justify-self: end;
+}
 .cover {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   margin-bottom: 180px;
   padding-left: 50px;
@@ -13,8 +63,69 @@
   padding-top: 165px;
   padding-bottom: 50px;
   background: url("../images/cover.jpg");
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 60%;
+}
+.cover__title {
+  z-index: 1;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115px;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+}
+.aligned-text {
+  display: block;
+  margin-bottom: 20px;
 }
 
+.aligned-text_center {
+  text-align: center;
+  margin-left: 0.3em;
+}
+.aligned-text_right {
+  text-align: right;
+  margin-right: -0.3em;
+  margin-bottom: 106px;
+}
+.description {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cover__description-text {
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  word-spacing: 0.9em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.cover__description-text-spacing {
+  word-spacing: 0.8em;
+}
+.bet-button {
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 25.83px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background: transparent;
+  padding: 12px 32px 11px 31px;
+}
 .lots {
   margin-left: auto;
   margin-right: auto;
