@@ -35,18 +35,6 @@
   list-style: none;
 }
 
-.header__link {
-  border-bottom: 1px solid black;
-  color: #000;
-  font-weight: 400;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-.header__link_active {
-  border-bottom: 0;
-}
-
 .address {
   color: #000;
   font-weight: 400;
